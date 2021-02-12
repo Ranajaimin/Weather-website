@@ -15,7 +15,7 @@ const forecast=(lat,long,callback)=>{
         else
         {
             // callback(undefined,response.body.daily[0].weather[0].description+" .  It is currently "+response.body.current.temp+" temprature and humidity is "+response.body.current.humidity+" humidity")
-            callback(undefined,body.daily[0].weather[0].description+" .  It is currently "+body.current.temp+" temprature and humidity is "+body.current.humidity+" humidity")
+            callback(undefined,body.daily[0].weather[0].description+" .  It is currently "+parseInt((body.current.temp)-273)+"°C temprature and humidity is "+body.current.humidity+".")
         }
     })
 }
