@@ -27,21 +27,21 @@ app.use(express.static(pubdir))
 
 app.get('',(req,res)=>{
     res.render('index',{
-        title:'weather APP',
+        title:'Weather',
         name:'jaimin s rana'
     })
 })
  
 app.get('/help',(req,res)=>{
     res.render('help',{
-        title:"help title",
-        helptext:"Please help me",
+        title:"Help",
+        helptext:"Some help text",
         name:'Jaimin s rana'
     })
 })
 app.get('/about',(req,res)=>{
     res.render('about',{
-        title:'about title',
+        title:'About',
         name:'jaimin s rana',
         age:20
     })
